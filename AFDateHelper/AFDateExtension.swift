@@ -31,9 +31,9 @@ public enum ISO8601Format: String {
             self = ISO8601Format(rawValue: ISO8601Format.YearMonth.rawValue)!
         case 10:
             self = ISO8601Format(rawValue: ISO8601Format.Date.rawValue)!
-        case 22:
+        case 21...22:
             self = ISO8601Format(rawValue: ISO8601Format.DateTime.rawValue)!
-        case 25:
+        case 24...25:
             self = ISO8601Format(rawValue: ISO8601Format.DateTimeSec.rawValue)!
         default:// 28:
             self = ISO8601Format(rawValue: ISO8601Format.DateTimeMilliSec.rawValue)!
